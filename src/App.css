@@ -1,4 +1,8 @@
 /* Basic styling for the cover */
+.body{
+background-color: black;
+}
+
 .background {
   position: absolute;
   top: 0;

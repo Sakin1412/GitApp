@@ -1,8 +1,10 @@
 
 import React from 'react';
 import './App.css';
-import Background from '../assets/images/Background.png';
-import Logo from '../assets/images/Logo.png';
+// import Background from '../assets/images/Background.png';
+// import Logo from '../assets/images/Logo.png';
+import Background from '../src/assets/images/Background.png'
+import Logo from '../src/assets/images/Logo.png';
 const App = () => {
   return (
     <>
