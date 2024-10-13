@@ -1,81 +1,88 @@
-/* Basic styling for the cover */
-.body{
-background-color: black;
+
+body {
+  background-color: black;
+  /* Targeting the body instead of '*' */
 }
 
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-}
-
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.central-content {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  right: 0;
-  text-align: center;
+.signIn {
+  background-color: #D82B2A;
   color: white;
-  z-index: 1;
+  font-size: 20px;
+  width: 100px;
+  height: 6vh;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+
+
 }
 
-.tvText, .starts, .enterEmail {
-  margin: 10px 0;
+.tvText {
+  font-size: 50px;
+  font-weight: bold;
 }
+
+.starts {
+  font-size: 26px;
+  font-weight: 600;
+ 
+}
+
+.enterEmail{
+  font-size: 22px;
+  font-weight: 400;
+}
+
 
 .btnNInput {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  text-align: center;
+ 
+}
+.btnNInput input{
+  opacity: .8;
 }
 
-.emailInput {
-  padding: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  font-size: 16px;
-}
 
 .getStarted {
   padding: 12px 20px;
-  background-color: #e50914;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    width: 250px;
+    height: 10vh;
+
 }
 
-.signIn {
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
+
+.emailInput {
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  color: #7C7C7C; /* Text color set to white */
+  border: 1px solid white; /* White border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding for better spacing */
+  width: 350px;
+  height: 55px;
+  margin-right: 10px;
+  font-size: 25px; /* Adjust width as needed */
 }
 
-.trending {
-  font-size: 24px;
+.emailInput::placeholder {
+  color: white;
+}
+.movieMain{
+ margin-top: 2%;
+ padding-left: 3%;
+}
+.trending{
+  color:white;
+ font-size: 25px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
-.movieMain {
-  padding: 20px;
-}
