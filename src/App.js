@@ -1,15 +1,13 @@
+import './App.css'
+import AppRouter from './Routes/AppRouter'
 
-import React from 'react';
-import './App.css';
-import Cover from './Cover';
-
-const App = () => {
+function App() {
   return (
-    <>
-        <div>
-          <Cover/>
-        </div>
-        </>
-    );
+    <div>
+      {/* App router from Routes folder */}
+      <AppRouter />
+    </div>
+  )
 }
- export default App
+
+export default App;
