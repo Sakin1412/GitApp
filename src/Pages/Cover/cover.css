@@ -56,18 +56,18 @@ body {
       cursor: pointer;
       font-size: 30px;
       width: 250px;
-      height: 10vh;
+      height: 9vh;
   
   }
   
   
   .emailInput {
     background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
-    color: #7C7C7C; /* Text color set to white */
+    color: white; /* Text color set to white */
     border: 1px solid white; /* White border */
     border-radius: 5px; /* Rounded corners */
     padding: 10px; /* Padding for better spacing */
-    width: 350px;
+    width: 450px;
     height: 55px;
     margin-right: 10px;
     font-size: 25px; /* Adjust width as needed */

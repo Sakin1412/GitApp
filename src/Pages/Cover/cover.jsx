@@ -5,6 +5,7 @@ import Logo from '../../assets/images/Logo.png'
 import MovieSlider from '../../Components/MovieSlider'
 import CardComp from '../../Components/CardComp';
 import AccordionExpandIcon from '../../Components/Accordion';
+import FooterComp from '../../Components/FooterComp';
 
 const Cover = () => {
     return (
@@ -58,6 +59,7 @@ const Cover = () => {
                             textAlign: 'center',
                             color: 'white',
                             zIndex: 1,
+                            marginBottom:'600px'
                         }}
                     >
                         <p className="tvText">Unlimited movies, TV shows, and more</p>
@@ -70,6 +72,7 @@ const Cover = () => {
                                 type="email"
                                 className="emailInput"
                                 placeholder="Email address"
+                                required
                             />
                             <button className="getStarted">Get Started {`>`}</button>
                         </div>
@@ -86,6 +89,10 @@ const Cover = () => {
             </div>
             <div style={{ marginTop: 10 }}>
                 <AccordionExpandIcon />
+            </div>
+
+            <div style={{ marginTop: 10 }}>
+                <FooterComp />
             </div>
         </>
     );

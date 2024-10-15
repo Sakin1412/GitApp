@@ -1,0 +1,75 @@
+.footerheading h1{
+    color:#C2C2C2;
+     font-Size:24;
+     font-weight: 400;
+     margin-left: 210px; /* Move right */
+     margin-top: 100px; /* Move downward */
+     text-decoration: underline;
+}
+
+.footer {
+    background-color: purple;
+    height: 40vh;
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center;     /* Center the container vertically */
+    padding: 20px 0;
+  }
+  
+  .container {
+    display: flex;
+    width: 80%; /* Adjust width to your preference */
+    justify-content: space-between; /* Space columns evenly */
+    margin-bottom: 100px;
+  }
+  
+  .row {
+    display: flex;
+    width: 100%;
+  }
+  
+  .footercol1,
+  .footercol2,
+  .footercol3,
+  .footercol4 {
+    flex: 1; /* Allows each column to take up equal space */
+    margin: 0 10px; /* Adds some spacing between columns */
+  }
+
+  .footercol1 a,
+  .footercol2 a,
+  .footercol3 a,
+  .footercol4 a {
+    display: block;
+    margin: 10px 0; /* Space between the links */
+    font-size: 21px; /* Adjust font size for better readability */
+    color: #C2C2C2;
+    text-decoration: underline; /* Remove the underline from links */
+ /* Adds a smooth transition effect */
+ line-height: 2; 
+ font-weight: 500;
+  }
+   
+  .footerheader {
+    background-color:black;
+    padding: 20px 0;
+    position: relative;
+    height: 30vh;
+  }
+  
+  .central-content {
+    text-align: center;
+    color: white;
+  }
+  
+  .emailInput2 {
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    color: white; /* Text color set to white */
+    border: 1px solid white; /* White border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for better spacing */
+    width: 450px;
+    height: 55px;
+    margin-right: 10px;
+    font-size: 25px; /* Adjust width as needed */
+  }
