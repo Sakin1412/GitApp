@@ -5,7 +5,7 @@ import { RiArrowDropDownLine } from 'react-icons/ri'
 const AccordionItem = ({ question, answer, isOpen, onClick }) => {
     const contentHeight = useRef()
     return(
-        <div className="wrapper" >
+        <div className="wrapper " >
     <button className={`question-container ${isOpen ? 'active' : ''}`} onClick={onClick} >
      <p className='question-content'>{question}</p>
      <RiArrowDropDownLine className={`arrow ${isOpen ? 'active' : ''}`} /> 
