@@ -94,6 +94,7 @@ const Cover = () => {
             <div style={{ marginTop: 10 }}>
                 <FooterComp />
             </div>
+          
         </>
     );
 }

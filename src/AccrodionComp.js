@@ -1,5 +1,3 @@
-
- import "./Accrodion.css";
 import { RiArrowDropDownLine } from 'react-icons/ri'
 //  accordionitem component
 const AccordionItem = ({ question, answer, isOpen, onClick }) => {
