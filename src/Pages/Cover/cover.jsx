@@ -8,6 +8,33 @@ import AccordionExpandIcon from '../../Components/Accordion';
 import FooterComp from '../../Components/FooterComp';
 
 const Cover = () => {
+
+    const cardData = [
+        {
+            id: 1,
+            heading: "Enjoy on your TV",
+            subHeading: "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.",
+            src: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
+        },
+        {
+            id: 2,
+            heading: "Download your shows to watch offline",
+            subHeading: "Save your favorites easily and always have something to watch.",
+            src: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
+        },
+        {
+            id: 3,
+            heading: "Watch everywhere",
+            subHeading: " Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.",
+            src: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
+        },
+        {
+            id: 4,
+            heading: "Create profiles for kids",
+            subHeading: "Send kids on adventures with their favorite characters in a space made just for them free with your membership.",
+            src: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
+        },
+    ]
     return (
         <>
             <div>
@@ -59,7 +86,7 @@ const Cover = () => {
                             textAlign: 'center',
                             color: 'white',
                             zIndex: 1,
-                            marginBottom:'600px'
+                            marginBottom: '600px'
                         }}
                     >
                         <p className="tvText">Unlimited movies, TV shows, and more</p>
@@ -84,17 +111,31 @@ const Cover = () => {
                 <p className='trending'>Trending Now</p>
                 <MovieSlider />
             </div>
-            <div style={{ marginTop: 10 }}>
-                <CardComp />
+            <div>
+                <h1 style={{ color: "white", fontSize: 35, marginLeft: "110px", fontFamily: "sans-serif" }}>More Reasons to Join</h1>
+                <div style={{
+                    marginTop: 10, display: "flex", flexDirection: 'row', justifyContent: 'space-evenly', marginBottom: '10%',
+                }}>
+
+                    {cardData.map((card) => (
+                        <CardComp
+                            key={card.id}
+                            heading={card.heading}
+                            subText={card.subHeading}
+                            src={card.src}
+                        />
+                    ))}
+                </div>
             </div>
-            <div style={{ marginTop: 10 }}>
+            <div style={{ marginTop: 10, marginLeft: '5.5%', marginRight: '6%', }}>
+                <h1 style={{ color: "white", fontSize: 35, fontFamily: "sans-serif" }}>Frequently Asked Questions</h1>
                 <AccordionExpandIcon />
             </div>
 
             <div style={{ marginTop: 10 }}>
                 <FooterComp />
             </div>
-          
+
         </>
     );
 }

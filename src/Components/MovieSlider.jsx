@@ -4,6 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './MovieSlider.css';
 import Background from '../assets/images/Background.png';
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
+
 
 const MovieSlider = () => {
     const sliderRef = useRef(null);
@@ -59,8 +61,8 @@ const MovieSlider = () => {
                     ))}
                 </Slider>
                 <div className="slider-controls">
-                    <button onClick={handlePrev} className="slider-button left">Previous</button>
-                    <button onClick={handleNext} className="slider-button right">Next</button>
+                    <button onClick={handlePrev} className="slider-button left"> <FaAngleLeft size={22} /></button>
+                    <button onClick={handleNext} className="slider-button right"><FaAngleRight size={22} /></button>
                 </div>
             </div>
         </>
