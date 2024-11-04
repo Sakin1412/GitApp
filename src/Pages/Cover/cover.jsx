@@ -2,13 +2,16 @@ import React from 'react';
 import './cover.css';
 import Background from '../../assets/images/Background.png'
 import Logo from '../../assets/images/Logo.png'
-import MovieSlider from '../../Components/MovieSlider'
-import CardComp from '../../Components/CardComp';
-import AccordionExpandIcon from '../../Components/Accordion';
-import FooterComp from '../../Components/FooterComp';
+import MovieSlider from '../../Components/Slider/MovieSlider'
+import CardComp from '../../Components/Card/CardComp';
+import AccordionExpandIcon from '../../Components/Accrodion/Accordion';
+import FooterComp from '../../Components/Footer/FooterComp';
+import { FaAngleRight } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
 
 const Cover = () => {
-
+    const navigate = useNavigate();
+    
     const cardData = [
         {
             id: 1,
@@ -55,7 +58,6 @@ const Cover = () => {
 
                     {/* Content on top of background */}
                     <div
-                        className="content"
                         style={{
                             position: 'absolute',
                             top: 0,
@@ -72,7 +74,7 @@ const Cover = () => {
                             alt="Logo"
                             style={{ height: '70px', width: '150px' }}
                         />
-                        <button className="signIn">Sign In</button>
+                        <button className="signIn" onClick={() => navigate('/signin')}>Sign In</button>
                     </div>
 
                     {/* Central text and input section */}
@@ -101,7 +103,7 @@ const Cover = () => {
                                 placeholder="Email address"
                                 required
                             />
-                            <button className="getStarted">Get Started {`>`}</button>
+                            <button className="getStarted">Get Started <div style={{ marginTop: 5, marginLeft: 5 }}><FaAngleRight size={26} /></div></button>
                         </div>
                     </div>
                 </div>

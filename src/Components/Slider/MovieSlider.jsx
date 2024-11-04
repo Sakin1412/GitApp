@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './MovieSlider.css';
-import Background from '../assets/images/Background.png';
+import Background from '../../assets/images/Background.png';
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 
 

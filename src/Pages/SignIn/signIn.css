@@ -1,0 +1,93 @@
+/* 
+body {
+    background-color: black;
+  }
+  
+   */
+
+   /* src/SignIn.css */
+
+   /* import Background from '../../assets/images/Background.png' */
+.signin-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../../assets/images/Background.png') no-repeat center center/cover;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .signin-form {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signin-form h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background: #333;
+    color: #fff;
+  }
+  
+  .signin-button {
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .sign-in-code {
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .forgot-password {
+    color: #757575;
+    text-decoration: none;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #757575;
+  }
+  
+  .signup {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .signup a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
