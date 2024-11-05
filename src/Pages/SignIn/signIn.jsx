@@ -1,58 +1,11 @@
 import React from 'react';
 import './signIn.css';
-import Background from '../../assets/images/Background.png'
-import Logo from '../../assets/images/Logo.png'
 import FooterComp from '../../Components/Footer/FooterComp';
 
 const SignIn = () => {
-    return (
-        // <>
-        //     <div>
-        //         <div>
-        //             {/* Background Image */}
-        //             <div
-        //                 className="background"
-        //                 style={{
-        //                     backgroundImage: `url(${Background})`,
-        //                     backgroundSize: 'cover',
-        //                     backgroundPosition: 'center',
-        //                     height: '100vh',
-        //                     width: '100vw',
-        //                     position: 'relative',
-        //                     opacity: 0.3,
-        //                 }}
-        //             />
-
-        //             {/* Content on top of background */}
-        //             <div
-        //                 className="content"
-        //                 style={{
-        //                     position: 'absolute',
-        //                     top: 0,
-        //                     left: 0,
-        //                     right: 0,
-        //                     display: 'flex',
-        //                     justifyContent: 'space-between',
-        //                     alignItems: 'center',
-        //                     padding: '20px',
-        //                 }}
-        //             >
-        //                 <img
-        //                     src={Logo}
-        //                     alt="Logo"
-        //                     style={{ height: '70px', width: '150px' }}
-        //                 />
-        //             </div>
-
-        //         </div>
-
-        //     </div>
-        //     <div style={{ marginTop: 10 }}>
-        //         <FooterComp txtInp={false}/>
-        //     </div>
-        // </>
-
-        <div className="signin-container">
+  return (
+    <>
+      <div className="signin-container">
         <div className="background">
           <div className="overlay">
             <form className="signin-form">
@@ -77,12 +30,14 @@ const SignIn = () => {
                 <label htmlFor="remember">Remember me</label>
               </div>
               <div className="signup">
-                New to Netflix? <a href="/">Sign up now.</a>
+                New to Netflix? <a href="/signup">Sign up now.</a>
               </div>
             </form>
           </div>
         </div>
       </div>
-    );
+      <FooterComp txtInp={false} />
+    </>
+  );
 }
 export default SignIn
