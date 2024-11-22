@@ -1,7 +1,6 @@
 import React from 'react';
 import './signIn.css';
 import FooterComp from '../../Components/Footer/FooterComp';
- import ProfileAccountComp from '../../Components/ProfileAccount/ProfileAccountComp';
 
 const SignIn = () => {
   return (
@@ -21,7 +20,7 @@ const SignIn = () => {
                 placeholder="Password"
                 className="input-field"
               />
-              <button className="signin-button"><a href="/ProfileAccountComp"> Sign In</a></button>
+              <button className="signin-button"><a href="/profile"> Sign In</a></button>
               <div className="options">
                 <button className="sign-in-code">Use a Sign-In Code</button>
                 <a href="/" className="forgot-password">Forgot password?</a>
